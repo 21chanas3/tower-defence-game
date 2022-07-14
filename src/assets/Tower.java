@@ -1,7 +1,12 @@
+package assets;
+
+import utils.Vector2D;
+
 public class Tower {
     private float attackSpeed;
     private float attackDamage;
     private float cost;
+    private Vector2D coord;
 
     public Tower(float attackSpeed, float attackDamage, float cost) {
         this.attackSpeed = attackSpeed;
@@ -31,5 +36,13 @@ public class Tower {
 
     public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public Vector2D getCoord() {
+        return coord;
+    }
+
+    public void setCoord(Vector2D coord) {
+        this.coord = coord;
     }
 }
