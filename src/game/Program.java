@@ -1,6 +1,6 @@
 package game;
 
-import game.Frame;
+
 import javax.swing.SwingUtilities;
 public class Program {
     public static void main(String args[]) {
@@ -8,7 +8,7 @@ public class Program {
         SwingUtilities.invokeLater(new Runnable () {
             @Override
             public void run() {
-                Frame gameFrame = new Frame();
+                Frame newFrame = new Frame();
             }
         });
         
