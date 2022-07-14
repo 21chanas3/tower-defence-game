@@ -1,10 +1,8 @@
+package game;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.border.Border;
-import javax.swing.*;
 import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.Dimension;
+import java.awt.GridLayout;
 
 public class Program {
     public static void main(String args[]) {
@@ -12,8 +10,9 @@ public class Program {
         JLabel emptyLabel = new JLabel("");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
-        frame.pack();
+        frame.setSize(500, 500);
         frame.setVisible(true);
+        frame.setLayout(new GridLayout(10,10));
     }
 
 }
