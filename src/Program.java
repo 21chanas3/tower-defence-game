@@ -9,7 +9,7 @@ import java.awt.Dimension;
 public class Program {
     public static void main(String args[]) {
         JFrame frame = new JFrame("QuickTest");
-        JLabel emptyLabel = new JLabel("")
+        JLabel emptyLabel = new JLabel("");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
         frame.pack();
