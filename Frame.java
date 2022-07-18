@@ -16,11 +16,5 @@ public class Frame extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(500, 500);
         setVisible(true);
-        panel = new JPanel(new GridLayout());
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 100; j++) {
-            }
-        }
-        add(panel);
     }
 }

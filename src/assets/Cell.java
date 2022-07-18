@@ -1,8 +1,17 @@
+package assets;
+
 import utils.Vector2D;
 
 public class Cell {
     private int colour, width, height;
     private Vector2D position;
+
+    public Cell(int colour, int width, int height, Vector2D position) {
+        this.colour = colour;
+        this.width = width;
+        this.height = height;
+        this.position = position;
+    }
 
     public void getColour(int colour) {
         this.colour = colour;
@@ -28,7 +37,13 @@ public class Cell {
         return height;
     }
 
-    public 
+    public void getPosition(Vector2D position) {
+        this.position = position;
+    }
+
+    public Vector2D setPosition() {
+        return position;
+    }
 
 
 }
