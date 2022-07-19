@@ -4,6 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import java.awt.GridLayout;
 import assets.Cell;
+import utils.Vector2D;
 
 public class Frame extends JFrame {
     private JPanel panel;

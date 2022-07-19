@@ -6,6 +6,10 @@ public class Cell {
     private int colour, width, height;
     private Vector2D position;
 
+    public Cell(){
+
+    }
+
     public Cell(int colour, int width, int height, Vector2D position) {
         this.colour = colour;
         this.width = width;
