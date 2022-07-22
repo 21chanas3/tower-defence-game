@@ -7,6 +7,7 @@ public class Program {
             @Override
             public void run() {
                 Frame newFrame = new Frame();
+                newFrame.repaint();
             }
         });
 

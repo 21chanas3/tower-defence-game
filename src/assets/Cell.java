@@ -3,6 +3,7 @@ package assets;
 import utils.Vector2D;
 import java.awt.Component;
 import java.awt.Color;
+import java.awt.Graphics;
 public class Cell extends Component {
     private int width, height;
     private Color color;
@@ -47,5 +48,9 @@ public class Cell extends Component {
         return position;
     }
 
+    public void draw(Graphics g) {
+        g.setColor(color);
+        g.fillRect(position.getX() * width, position.getY() * height, width, height);
+    }
 
 }
