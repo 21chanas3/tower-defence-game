@@ -6,6 +6,7 @@ import java.awt.GridLayout;
 import assets.Cell;
 import utils.Vector2D;
 import java.util.ArrayList;
+import java.awt.Color;
 
 public class Frame extends JFrame {
     private JPanel panel;
@@ -23,7 +24,7 @@ public class Frame extends JFrame {
         panel = new JPanel(new GridLayout(100, 100, 0 , 0));
         for (int i = 0; i < 50; i++) {
             for (int j = 0; j < 50; j++) {
-                cellArrayList.add(new Cell(new Vector2D(i, j)));
+                cellArrayList.add(new Cell(Color.WHITE, 10, 10, new Vector2D(i, j)));
             }
         }
         add(panel);

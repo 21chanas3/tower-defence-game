@@ -1,28 +1,26 @@
 package assets;
 
 import utils.Vector2D;
-
-public class Cell {
-    private int colour, width, height;
+import java.awt.Component;
+import java.awt.Color;
+public class Cell extends Component {
+    private int width, height;
+    private Color color;
     private Vector2D position;
 
-    public Cell(){
-
-    }
-
-    public Cell(int colour, int width, int height, Vector2D position) {
-        this.colour = colour;
+    public Cell(Color color, int width, int height, Vector2D position) {
+        this.color = color;
         this.width = width;
         this.height = height;
         this.position = position;
     }
 
-    public void getColour(int colour) {
-        this.colour = colour;
+    public void getColor(Color color) {
+        this.color = color;
     }
 
-    public int setColour() {
-        return colour;
+    public Color setColor() {
+        return color;
     }
 
     public void getWidth(int width) {
