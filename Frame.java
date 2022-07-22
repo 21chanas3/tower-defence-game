@@ -5,9 +5,11 @@ import javax.swing.JLabel;
 import java.awt.GridLayout;
 import assets.Cell;
 import utils.Vector2D;
+import java.util.ArrayList;
 
 public class Frame extends JFrame {
     private JPanel panel;
+    private ArrayList<Cell> cells = new ArrayList<Cell>();
 
     public Frame() {
         initializeFrame();
@@ -19,10 +21,9 @@ public class Frame extends JFrame {
         setSize(500, 500);
         setVisible(true);
         panel = new JPanel(new GridLayout(100, 100, 0 , 0));
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 100; j++) {
-                Cell addCells = new Cell();
-                panel.add(addCells);
+        for (int i = 0; i < 50; i++) {
+            for (int j = 0; j < 50; j++) {
+                cellArrayList.add(new Cell(new Vector2D(i, j)));
             }
         }
         add(panel);
