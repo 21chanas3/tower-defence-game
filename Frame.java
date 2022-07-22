@@ -28,4 +28,12 @@ public class Frame extends JFrame {
         }
         add(panel);
     }
+
+    public Cell getCell(int i, int j) {
+        return cells.get(i * 50 + j);
+    }
+
+    public Cell getCell(Vector2D position) {
+        return getCell(position.getX(), position.getY());
+    }
 }
