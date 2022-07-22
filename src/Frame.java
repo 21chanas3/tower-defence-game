@@ -1,7 +1,5 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.JLabel;
 import java.awt.GridLayout;
 import assets.Cell;
 import utils.Vector2D;
