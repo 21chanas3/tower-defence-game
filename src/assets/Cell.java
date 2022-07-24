@@ -1,56 +1,34 @@
 package assets;
 
 import utils.Vector2D;
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.Graphics;
-public class Cell extends Component {
-    private int width, height;
-    private Color color;
-    private Vector2D position;
 
-    public Cell(Color color, int width, int height, Vector2D position) {
+import java.awt.*;
+
+public class Cell extends Component {
+    private final int width, height;
+    private final int x,y;
+    private Color color;
+
+    public Cell(Color color, int width, int height, int x, int y) {
         this.color = color;
         this.width = width;
         this.height = height;
-        this.position = position;
+        this.x = x;
+        this.y = y;
     }
 
-    public void getColor(Color color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public Color setColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void getWidth(int width) {
-        this.width = width;
-    }
-
-    public int setWidth() {
-        return width;
-    }
-
-    public void getHeight(int height) {
-        this.height = height;
-    }
-
-    public int setHeight() {
-        return height;
-    }
-
-    public void getPosition(Vector2D position) {
-        this.position = position;
-    }
-
-    public Vector2D setPosition() {
-        return position;
-    }
-
     public void draw(Graphics g) {
-        g.setColor(color);
-        g.fillRect(position.getX() * width, position.getY() * height, width, height);
+        Graphics2D graphics = (Graphics2D) g;
+        graphics.setColor(color);
+        graphics.fillRect(x, y, width, height);
     }
 
 }
